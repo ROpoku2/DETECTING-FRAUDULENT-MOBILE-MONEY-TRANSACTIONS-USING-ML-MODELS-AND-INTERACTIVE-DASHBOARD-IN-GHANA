@@ -20,10 +20,10 @@ Mobile money is widely used in Ghana, but fraud remains a major challenge that c
 It provided the best balance, catching 96% of fraudulent transactions while maintaining a strong AUC-ROC of 0.99 and a higher precision.
 
 ## Key Insights 
-- Fraudulent transactions occured mostly during CASH_OUT and Transfers as to other types of transactions such as Payment and Debit.
-- The important feature for detecting fraud were Origin Old balance, Transaction amount, origin new balance and Transaction type
+- Fraudulent transactions occurred mostly during CASH_OUT and Transfers as to other types of transactions such as Payment and Debit.
+- The most important features for detecting fraud were Origin Old balance, Transaction amount, origin new balance and Transaction type
 ## Dashboard
-![Power BI Dashboard Overview]("https://github.com/user-attachments/assets/640b550f-1367-4c8a-bb9d-d3da68eaaa03")
+![Power BI Dashboard Overview](https://github.com/user-attachments/assets/640b550f-1367-4c8a-bb9d-d3da68eaaa03)
 
 ![Fraud Patterns by Amount](<img width="1548" height="682" alt="avg tran vs amount" src="https://github.com/user-attachments/assets/95f65b7c-6f84-449c-8497-6614fbd64c5a" />)
 

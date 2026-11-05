@@ -1,56 +1,43 @@
-# Detecting Fraudulent Mobile Money Transactions Using ML Models and Interactive Dashboard in Ghana
+# Fraud Detection in Mobile Money Transactions – Ghana (Power BI + Machine Learning)
 
-Dataset from Kaggle, PaySim dataset. over 6 million rows
+## Business Problem
+Mobile money is widely used in Ghana, but fraud remains a major challenge that causes financial losses for both users and providers. This project aims to detect fraudulent transaction patterns and identify the most effective machine learning model for flagging suspicious activity.
 
-This project compares machine learning models to detect fraudulent mobile money transactions and visualizes key performance indicators (KPIs) through an interactive Power BI dashboard. The focus is on the Ghanaian mobile money ecosystem.
-
-## Overview
-Mobile money is widely used in Ghana, but fraud remains a major challenge. This project evaluates and compares three machine learning models — **Logistic Regression**, **Random Forest**, and **XGBoost** — to identify which performs best at detecting fraudulent transactions. The results are then presented in a Power BI dashboard for easy exploration of KPIs and insights.
-
-## Objectives
-- Compare the performance of Logistic Regression, Random Forest, and XGBoost for fraud detection
-- Identify the best-performing model based on relevant evaluation metrics
-- Visualize key findings and KPIs using an interactive Power BI dashboard
-
-## Models Used
-| Model                  | Type              |
-|------------------------|-------------------|
-| Logistic Regression    | Linear model      |
-| Random Forest          | Ensemble (Bagging)|
-| XGBoost                | Ensemble (Boosting)|
-
-## Technologies & Tools
-- **Python** (Jupyter Notebook)
-- **scikit-learn**
-- **XGBoost**
-- **pandas** & **NumPy**
-- **Power BI** (for interactive dashboard)
-
-## Project Files
-| File                          | Description                          |
-|-------------------------------|--------------------------------------|
-| `MBA-PROJECT Raymond.ipynb`   | Jupyter notebook with model training and comparison |
-| `mba 1.pbix`                  | Power BI dashboard                   |
-| `README.md`                   | Project documentation                |
-
-## How to Use
-
-### 1. Machine Learning Analysis
-1. Open `MBA-PROJECT Raymond.ipynb` in Jupyter Notebook or Google Colab.
-2. Run the cells to train and compare the models.
-
-### 2. Power BI Dashboard
-1. Open `mba 1.pbix` with **Microsoft Power BI Desktop**.
-2. Explore the visualizations and KPIs.
+## Approach
+- Used the PaySim dataset (~6 million transactions)
+- Compared three models: Logistic Regression, Random Forest, and XGBoost
+- Evaluated models using Precision, Recall, F1-Score, and AUC-ROC
+- Built an interactive Power BI dashboard to visualize fraud patterns and model performance
 
 ## Key Results
-*(Update these with your actual results)*
-- Best performing model: **RANDOM FOREST**
-- Offered overall balance across
-- Precision / Recall / F1-score: **0.63/0.96/0.76**
-- AUC-ROC: **0.99**
+| Model              | Precision | Recall | F1-Score | AUC-ROC |
+|--------------------|-----------|--------|----------|---------|
+| Random Forest      | 0.63      | **0.96** | **0.76** | **0.99** |
+| XGBoost            | 0.41      | **0.99** | **0.58** | **0.99** |
+| Logistic Regression| 0.03      | **0.87** | **0.05** | **0.97** |
+
+**Best Model:** Random Forest  
+It provided the best balance, catching 96% of fraudulent transactions while maintaining a strong AUC-ROC of 0.99 and a higher precision.
+
+## Key Insights 
+- Fraudulent transactions occured mostly during CASH_OUT and Transfers as to other types of transactions such as Payment and Debit.
+- The important feature for detecting fraud were Origin Old balance, Transaction amount, origin new balance and Transaction type
+## Dashboard
+![Power BI Dashboard Overview](<img width="960" height="544" alt="dashboard" src="https://github.com/user-attachments/assets/640b550f-1367-4c8a-bb9d-d3da68eaaa03" />)
+
+![Fraud Patterns by Amount](<img width="1548" height="682" alt="avg tran vs amount" src="https://github.com/user-attachments/assets/95f65b7c-6f84-449c-8497-6614fbd64c5a" />)
+
+
+## Tools & Technologies
+- Python (pandas, scikit-learn, XGBoost)
+- Power BI
+- Jupyter Notebook
+
+## Project Files
+- `fraud_detection_models.ipynb` — Model training and comparison
+- `mobile_money_fraud_dashboard.pbix` — Interactive Power BI dashboard
 
 ## Author
-**Raymond Opoku** ([@ROpoku2](https://github.com/ROpoku2))
-
----
+Raymond Opoku  
+MBA (Business Intelligence & Data Analytics)  
+[LinkedIn] | [@ROpoku2](https://github.com/ROpoku2)

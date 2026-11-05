@@ -25,7 +25,7 @@ It provided the best balance, catching 96% of fraudulent transactions while main
 ## Dashboard
 ![Power BI Dashboard Overview](https://github.com/user-attachments/assets/640b550f-1367-4c8a-bb9d-d3da68eaaa03)
 
-![Fraud Patterns by Amount](<img width="1548" height="682" alt="avg tran vs amount" src="https://github.com/user-attachments/assets/95f65b7c-6f84-449c-8497-6614fbd64c5a" />)
+![Fraud Patterns by Amount](https://github.com/user-attachments/assets/95f65b7c-6f84-449c-8497-6614fbd64c5a)
 
 
 ## Tools & Technologies

@@ -23,7 +23,7 @@ It provided the best balance, catching 96% of fraudulent transactions while main
 - Fraudulent transactions occured mostly during CASH_OUT and Transfers as to other types of transactions such as Payment and Debit.
 - The important feature for detecting fraud were Origin Old balance, Transaction amount, origin new balance and Transaction type
 ## Dashboard
-![Power BI Dashboard Overview](<img width="960" height="544" alt="dashboard" src="https://github.com/user-attachments/assets/640b550f-1367-4c8a-bb9d-d3da68eaaa03" />)
+![Power BI Dashboard Overview]("https://github.com/user-attachments/assets/640b550f-1367-4c8a-bb9d-d3da68eaaa03")
 
 ![Fraud Patterns by Amount](<img width="1548" height="682" alt="avg tran vs amount" src="https://github.com/user-attachments/assets/95f65b7c-6f84-449c-8497-6614fbd64c5a" />)
 

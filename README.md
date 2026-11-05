@@ -40,4 +40,4 @@ It provided the best balance, catching 96% of fraudulent transactions while main
 ## Author
 Raymond Opoku  
 MBA (Business Intelligence & Data Analytics)  
-[LinkedIn] | [@ROpoku2](https://github.com/ROpoku2)
+| [@ROpoku2](https://github.com/ROpoku2)
